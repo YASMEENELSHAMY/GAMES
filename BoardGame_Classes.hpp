@@ -41,6 +41,20 @@ public:
    bool is_draw();
    bool game_is_over();
 };
+
+class Pyramid_Board : public Board{
+public:
+    Pyramid_Board();
+    bool update_board (int x,int y, char mark);
+    void display_board();
+    bool is_winner();
+    bool is_draw();
+    bool game_is_over();
+
+
+};
+
+
 class Four_in_a_row :public Board{
 public:
     Four_in_a_row();
